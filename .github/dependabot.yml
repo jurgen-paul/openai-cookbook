@@ -1,0 +1,32 @@
+# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://docs.github.com/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: "" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "weekly"
+# Dependabot configuration to automate dependency updates
+# See the full documentation here:
+# https://docs.github.com/en/code-security/dependabot/dependabot-version-updates/configuration-options-for-the-dependabot.yml-file
+
+version: 2
+updates:
+  - package-ecosystem: "npm" # Replace with your package ecosystem, e.g., "maven", "pip", "maven", etc.
+    directory: "/" # Path to the directory containing your package manifests
+    schedule:
+      interval: "weekly" # Options: "daily", "weekly", "monthly"
+    # Optional: When to open pull requests for updates
+    open-pull-requests-limit: 5
+    # Optional: Specify the allowed versions for dependency updates
+    # versioning-strategy: increase # Other options: "auto", "widen", "increase"
+    # Optional: Ignore specific dependencies or versions
+    # ignore:
+    #   - dependency-name: "some-dependency"
+    #     versions: ["1.2.3"]
+    #     update-types: "version-update:semver-major"
+    # Optional: Enable security updates only
+    # security-updates: true
